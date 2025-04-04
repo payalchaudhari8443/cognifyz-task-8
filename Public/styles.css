@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#chat, #upload {
+    margin-bottom: 30px;
+}
+
+#messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"], input[type="file"] {
+    padding: 8px;
+    flex: 1;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
