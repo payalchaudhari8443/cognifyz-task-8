@@ -48,12 +48,12 @@ app.get('/', (req, res) => {
 });
 
 // File Upload Route
-app.post('/upload', upload.single('file'), (req, res) => {
-    if (!req.file) {
-        return res.render('index', { error: 'No file uploaded or invalid file type' });
-    }
-    res.render('index', { error: null, fileUrl: `/uploads/${req.file.filename}` });
-});
+// app.post('/upload', upload.single('file'), (req, res) => {
+//     if (!req.file) {
+//         return res.render('index', { error: 'No file uploaded or invalid file type', fileUrl: null });
+//     }
+//     res.render('index', { error: null, fileUrl: `/uploads/${req.file.filename}` });
+// });
 
 // HTTP Server
 const server = app.listen(port, () => {

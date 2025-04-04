@@ -20,21 +20,20 @@
     </div>
 
     <!-- File Upload Section -->
-    <div id="upload">
-        <h2>Upload an Image</h2>
-        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file" accept="image/jpeg,image/jpg,image/png" required>
-            <button type="submit">Upload</button>
-        </form>
-        <% if (error) { %>
-            <p class="error"><%= error %></p>
-        <% } %>
-        <% if (locals.fileUrl) { %>
-            <p>Uploaded Image: <a href="<%= fileUrl %>" target="_blank">View</a></p>
-            <img src="<%= fileUrl %>" alt="Uploaded Image" style="max-width: 300px;">
-        <% } %>
-    </div>
-
+   <!-- <div id="upload">
+    <h2>Upload an Image</h2>
+    <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/jpeg,image/jpg,image/png" required>
+        <button type="submit">Upload</button>
+    </form>
+    <% if (error) { %>
+        <p class="error"><%= error %></p>
+    <% } %>
+    <% if (fileUrl) { %>
+        <p>Uploaded Image: <a href="<%= fileUrl %>" target="_blank">View</a></p>
+        <img src="<%= fileUrl %>" alt="Uploaded Image" style="max-width: 300px;">
+    <% } %>
+</div> -->s
     <script src="/script.js"></script>
 </body>
 </html>
